@@ -1,0 +1,5 @@
+[package]
+name = "reverse-string"
+version = "0.1.0"
+authors = ["Lin-H <lh04667649@gmail.com>"]
+description = "Rust practics - reverse the input string and print it."
