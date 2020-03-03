@@ -43,7 +43,6 @@ impl Future for Server {
                 self.to_send = None;
             }
 
-            // If we're here then `to_send` is `None`, so we take a look for the
             // next message we're going to echo back.
             self.to_send = Some(try_ready!(self.socket.poll_recv_from(&mut self.buf)));
         }
